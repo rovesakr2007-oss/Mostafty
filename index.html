@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💘🥹بحبك يمصطفتي</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #4b2633;
+  color: #fff;
+}
+
+.page {
+  min-height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.page.active {
+  display: flex;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.small {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+button {
+  padding: 10px 22px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #ffb6c1;
+  cursor: pointer;
+}
+
+/* الصور */
+.images {
+  position: relative;
+  width: 260px;
+  height: 360px;
+  margin: 10px auto 8px auto;
+}
+
+.images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* العداد */
+.counter {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+
+/* الجمل الشمال */
+.left-notes {
+  width: 100%;
+  direction: rtl;
+  margin-bottom: 10px;
+}
+
+.left-notes .left {
+  text-align: left;
+}
+
+/* كلام عيد الميلاد */
+.text-block {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.text-block p {
+  margin-bottom: 15px;
+}
+
+/* كلمات الأغنية */
+.lyrics-top {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.lyrics {
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 50px;
+  text-align: center;
+  direction: rtl; /* تصحيح اتجاه النص العربي */
+}
+
+/* fade-in للكلمات */
+.fade-word {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-word.show {
+  opacity: 1;
+}
+
+/* مشغل الموسيقى */
+.audio-player audio {
+  width: 90%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- الصفحة الأولى -->
+<div class="page active" id="page1">
+  <h1>كل سنة وانتَ طيوب يروح قلب مراتك 😚❤️</h1>
+  <div class="small">متنساش تبوسني يمصطفتي 😔</div>
+  <button onclick="goNext()" style="font-size:12px; margin-top:100px;">تعال يكوتي</button>
+</div>
+
+<!-- الصفحة التانية -->
+<div class="page" id="page2">
+
+  <!-- الصور -->
+  <div class="images" onclick="nextImage()">
+    <div class="counter" id="counter">1 / 4</div>
+    <img src="photo1.jpg" id="img1">
+    <img src="photo2.jpg" id="img2" class="hidden">
+    <img src="photo3.jpg" id="img3" class="hidden">
+    <img src="photo4.jpg" id="img4" class="hidden">
+    <img src="photo5.jpg" id="img5" class="hidden">
+  </div>
+
+  <!-- الجمل الشمال بعد التعديل النهائي -->
+  <div class="left-notes">
+    <div class="small left">عقبال ما نتصورهم احنا يا مصطفتي 🌚💘</div>
+    <div class="small left">(دوس على الصورة يا كوتي)</div>
+  </div>
+
+  <!-- كلام عيد الميلاد -->
+  <div class="text-block">
+    <p>
+    انا متحمسة ليوم ميلادك لدرجة اني بكتب الكلام دا واحنا لسه 25/1، انا بجد مبسوطة جدا اننا ان شاء الله هنكون سوا ونفسي اوي اوي اعرف اشوفك يوم ميلادك (عشان اديك هديتك طبعا مش عشان نفسي اشوفك مثلا😔)
+    </p>
+
+    <p>
+    بجد يارب اقدر اشوفك اليوم دا والله، بس لو معرفناش ننزل سوا مش مشكلة كدا كدا يوم ما نتجوز هجيبلك هدايا ميلادك اللي معرفتش اجبهالك الايام دي وساعتها هبقا اشوفك واحضنك وابوسك واعمل اي حاجة براحتي عشان الكوتي هيكون بقا جوزي خلاص (ان شاء الله ياارب🫶🏼)
+    </p>
+
+    <p>
+الموهيم بقا يعسول انتَ كل سنة وانتَ طيوب وبخير يمصطفتي، كل سنين العمر وانتَ معايا ينور عيني ويارب تكون سنة سعيدة عليك كدهو وتحقق اللي نفسك فيه واشوفك ديمًا مبسوط يعمري، بحبك والله وبحب وقتنا سوا وبحب افضل اتكلم معاك كتير، انتَ حبيبي وعمري وكل حاجة ليا انتَ اماني وبيتي اللي برتاح فيه، ربنا يديمك في حياتي ويديم صوتك وكلامك وضحكتك كل حاجة منك بحبها والله، انتَ عمري كلو وانا والله بحبك من كل قلبي وهفضل احبك طول العمر، يبختي بوجودك معايا وفي حياتي يبختي اني بسمع صوتك واشوفك، ربنا يخليك ليا يروح قلبي ونفضل سوا العمر كلو يا ابو إلياس ونعيش سوا كل حاجة اتفقنا عليها وتكون في حضني ومعانا إلياس ان شاء الله 🥹🫂❤️❤️  
+    </p>
+  </div>
+
+  <!-- جملة فوق كلمات الأغنية -->
+  <div class="lyrics-top">
+    عيشت نص الاغنية
+💗🫂يارب نعيش سوا النص التاني يحبيب عُمري
+  </div>
+
+  <!-- كلمات الأغنية -->
+  <div class="lyrics" id="lyrics"></div>
+
+  <!-- مشغل الموسيقى -->
+  <div class="audio-player">
+    <audio id="audio" src="song.mp3" controls></audio>
+  </div>
+
+</div>
+
+<script>
+let imgs = ["img1","img2","img3","img4"];
+let currentImg = 0;
+
+function goNext(){
+  document.getElementById("page1").classList.remove("active");
+  document.getElementById("page2").classList.add("active");
+  document.getElementById("audio").play();
+  startLyrics();
+}
+
+function nextImage(){
+  document.getElementById(imgs[currentImg]).classList.add("hidden");
+  currentImg = (currentImg + 1) % imgs.length;
+  document.getElementById(imgs[currentImg]).classList.remove("hidden");
+  document.getElementById("counter").innerText = (currentImg + 1) + " / 4";
+}
+
+/* كلمات الأغنية مع fade-in محسنة مع المسافات */
+const lines = [
+  { text: "انا وحَبيبي", speed: 1370 },
+  { text: "انا وحَبيبي", speed: 1290 },
+  { text: "دوبنا عُمر الحُب", speed: 1030 },
+  { text: "كُله فِي يوم وليلة", speed: 1100 },
+
+  { pause: 3380 }, // سكوت الموسيقى
+
+  { text: "عمري ما شُوفته", speed: 850 },
+  { text: "ولا قابلته", speed: 510 },
+  { text: "وياما ياما شغلنِي طِيفُه", speed: 1210 },
+  { text: "وفِي يُوم لاقِيته", speed: 800 },
+  { text: "لاقِيته هُوو", speed: 710 },
+  { text: "هُو اللي كُنت بتمنىٰ اشُوفه", speed: 920 },
+  { text: "نسِيت الدُنيا وجرِيت عَليه", speed: 1200 },
+  { text: "سَبقني هُو وفتَح ايدِيه", speed: 950 }
+];
+
+let lineIndex = 0;
+
+function startLyrics(){
+  const box = document.getElementById("lyrics");
+  box.innerHTML = "";
+  lineIndex = 0;
+
+  function showNext(){
+    if(lineIndex >= lines.length) return;
+
+    if(lines[lineIndex].pause){
+      setTimeout(() => {
+        lineIndex++;
+        showNext();
+      }, lines[lineIndex].pause);
+      return;
+    }
+
+    box.innerHTML = "";
+    let words = lines[lineIndex].text.split(" ");
+    let w = 0;
+
+    function showWord(){
+      if(w < words.length){
+        const span = document.createElement("span");
+        span.className = "fade-word";
+        span.innerText = words[w];
+        box.appendChild(span);
+
+        // نضيف مسافة بعد كل كلمة
+        box.appendChild(document.createTextNode(" "));
+
+        setTimeout(() => span.classList.add("show"), 50);
+
+        w++;
+        setTimeout(showWord, lines[lineIndex].speed);
+      } else {
+        lineIndex++;
+        setTimeout(showNext, 700);
+      }
+    }
+    showWord();
+  }
+  showNext();
+}
+</script>
+
+</body>
+</html>
