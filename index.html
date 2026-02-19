@@ -200,7 +200,7 @@ button {
 </div>
 
 <script>
-let imgs = ["img1","img2","img3","img4"];
+let imgs = ["img1","img2","img3","img4","img5"];
 let currentImg = 0;
 
 function goNext(){
@@ -214,7 +214,7 @@ function nextImage(){
   document.getElementById(imgs[currentImg]).classList.add("hidden");
   currentImg = (currentImg + 1) % imgs.length;
   document.getElementById(imgs[currentImg]).classList.remove("hidden");
-  document.getElementById("counter").innerText = (currentImg + 1) + " / 4";
+  document.getElementById("counter").innerText = (currentImg + 1) + " / 5";
 }
 
 /* كلمات الأغنية مع fade-in محسنة مع المسافات */
